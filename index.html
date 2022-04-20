@@ -1,0 +1,239 @@
+ <!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8"/>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a  href="index.html">Home</a>
+                 </div>
+
+                 <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+             </div>
+
+             <div class="right-side">
+                 <div class="brand">
+                    <div>STUDENT ID: 10952935</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="felix-items-wrapper">
+
+            <div class="felix-item-wrapper">
+                <div class="felix-img-background" style="background-image:url(images/felix1.jpg)"></div>
+           
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                </div>
+        
+                    <div class="subtitle">
+                        I built the Quip Ecommerce platform,named a top 25 Invention by Time magazine in 2021.
+                    </div>
+             </div>
+         </div>
+
+
+
+
+
+         <div class="felix-item-wrapper">
+            <div class="felix-img-background" style="background-image:url(images/felix2.jpg)"></div>
+       
+            <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+            </div>
+    
+                <div class="subtitle">
+                    Coding is in my DNA.
+                </div>
+         </div>
+     </div>
+
+
+
+
+
+     <div class="felix-item-wrapper">
+        <div class="felix-img-background" style="background-image:url(images/felix3.jpg)"></div>
+   
+        <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+        </div>
+
+            <div class="subtitle">
+                I'm a white hacker.
+            </div>
+     </div>
+ </div>
+   
+ 
+
+
+
+
+ <div class="felix-item-wrapper">
+    <div class="felix-img-background" style="background-image:url(images/felix4.jpg)"></div>
+
+    <div class="img-text-wrapper">
+        <div class="logo-wrapper">          
+    </div>
+
+        <div class="subtitle">
+            I code for fun.
+        </div>
+ </div>
+</div>
+
+
+
+
+
+<div class="felix-item-wrapper">
+    <div class="felix-img-background" style="background-image:url(images/felix5.jpg)"></div>
+
+    <div class="img-text-wrapper">
+        <div class="logo-wrapper">
+    </div>
+
+        <div class="subtitle">
+            It's always been my dream to be like Bill Gate.
+        </div>
+ </div>
+</div>
+
+
+
+
+
+
+<div class="felix-item-wrapper">
+    <div class="felix-img-background" style="background-image:url(images/felix6.jpg)"></div>
+
+    <div class="img-text-wrapper">
+        <div class="logo-wrapper">    
+    </div>
+
+        <div class="subtitle">
+            I want to make more money and take care of my family.
+        </div>
+ </div>
+</div>
+
+
+
+
+
+
+<div class="felix-item-wrapper">
+    <div class="felix-img-background" style="background-image:url(images/felix7.jpg)"></div>
+
+    <div class="img-text-wrapper">
+        <div class="logo-wrapper">        
+    </div>
+
+        <div class="subtitle">
+            I love my mother .
+        </div>
+ </div>
+</div>
+
+
+
+
+
+
+<div class="felix-item-wrapper">
+    <div class="felix-img-background" style="background-image:url(images/felix8.jpg)"></div>
+
+    <div class="img-text-wrapper">
+        <div class="logo-wrapper">     
+    </div>
+
+        <div class="subtitle">
+            Computer Science Department.
+        </div>
+ </div>
+</div>
+
+
+
+<div class="felix-item-wrapper">
+    <div class="felix-img-background" style="background-image:url(images/felix9.jpg)"></div>
+
+    <div class="img-text-wrapper">
+        <div class="logo-wrapper">        
+     </div>
+
+        <div class="subtitle">
+            Building my own website.
+        </div>
+ </div>
+</div>
+
+
+<div class="felix-item-wrapper">
+    <div class="felix-img-background" style="background-image:url(images/felix10.jpg)"></div>
+
+    <div class="img-text-wrapper">
+        <div class="logo-wrapper">           
+     </div>
+
+        <div class="subtitle">
+            Hardwork pays.
+        </div>
+ </div>
+</div>
+
+
+<div class="felix-item-wrapper">
+    <div class="felix-img-background" style="background-image:url(images/felix11.jpg)"></div>
+
+    <div class="img-text-wrapper">
+        <div class="logo-wrapper">      
+    </div>
+
+        <div class="subtitle">
+            Univeristy of Ghana Legon.
+        </div>
+ </div>
+</div>
+
+
+
+<div class="felix-item-wrapper">
+    <div class="felix-img-background" style="background-image:url(images/felix12.jpg)"></div>
+
+    <div class="img-text-wrapper">
+        <div class="logo-wrapper">        
+    </div>
+
+        <div class="subtitle">
+            Am in Level 200.
+        </div>
+ </div>
+</div>
+ </body>
+  <script>
+      const felixItems = document.querySelectorAll('.felix-item-wrapper')
+
+      felixItems.forEach(felixItem => {
+        felixItem.addEventListener('mouseover',() => {
+            console.log(felixItem.childNodes[1].classList);
+            felixItem.childNodes[1].classList.add('img-darken');
+         })
+
+        felixItem.addEventListener('mouseout', () => {
+            felixItem.childNodes[1].classList.remove('img-darken');
+         })
+      })
+  </script>
+ </html>
